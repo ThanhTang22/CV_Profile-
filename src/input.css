@@ -170,37 +170,21 @@
     .projects-img{
         @apply h-[500px] bg-top bg-contain bg-no-repeat relative
     }
-    .project-img__vimos{
+    /* .project-img__vimos{
         background-image: linear-gradient(
             60deg,
             rgba(5, 8, 39, 0.5),
             rgba(5, 8, 39, 0.7)
         ),
-        url(../asset/projects/vimos.png);
-        /* width: 500px; */
-        height: 500px;
-        background-position: top;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        position: relative;
-        /* @apply bg-vimos w-96 h-96 bg-cover bg-center bg-no-repeat */
-    }
-    .project-img__coffeestyle{
+        url(./asset/projects/vimos.png);
+    } */
+    /* .project-img__coffeestyle{
         background-image: linear-gradient(
             60deg,
             rgba(5, 8, 39, 0.5),
             rgba(5, 8, 39, 0.7)
         ),
-        url(../asset/projects/coffeeStyle.png);
-        /* width: 500px; */
-        height: 500px;
-        background-position:top;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        position: relative;
-        /* @apply bg-vimos w-96 h-96 bg-cover bg-center bg-no-repeat */
-    }
+        url(./asset/projects/coffeeStyle.png);
+    } */
 
 }

@@ -16,10 +16,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        // 'vimos': "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url(./asset/projects/vimos.png)",
-        'vimos': "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../asset/projects/vimos.png')",
-        'coffee-style': "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../asset/projects/coffeeStyle.png')",
-      
+        'vimos' : "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../src/asset/projects/vimos.png')",
+        'coffee-style' : "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../src/asset/projects/coffeeStyle.png')",
       },
     }
   },
