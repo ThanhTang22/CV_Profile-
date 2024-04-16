@@ -998,11 +998,11 @@ h6 {
 }
 
 .bg-coffee-style {
-  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../src/asset/projects/coffeeStyle.png');
+  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('./asset/projects/coffeeStyle.png');
 }
 
 .bg-vimos {
-  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('../src/asset/projects/vimos.png');
+  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url('./asset/projects/vimos.png');
 }
 
 .p-4 {
