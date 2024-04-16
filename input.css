@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-body text-base 
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-heading font-bold
+    }
+    h1{
+        @apply text-5xl
+    }
+    h2{
+        @apply text-4xl
+    }
+    h3{
+        @apply text-3xl
+    }
+    h4{
+        @apply text-2xl
+    }
+    h5{
+        @apply text-xl
+    }
+    h6{
+        @apply text-lg
+    }
+
+
+
+}
+
+@layer components{
+    .border-test{
+        @apply border-2 border-red-500
+    }
+    .container-wrapper{
+        @apply relative max-w-screen-xl mx-auto
+    }
+    .img-full{
+        @apply w-full aspect-auto
+    }
+
+    /* * header */
+    /* header block toggle */
+    .header-menu-block--link{
+        @apply w-full text-center
+    }
+    .header-menu-block--link > a{
+        @apply uppercase block py-2 text-lg font-medium text-black/40 hover:text-white
+    }
+
+    /** about-me */
+    /*  socicals icon */
+    .about-me-address--socials{
+        @apply inline-flex gap-2 items-center
+    }
+
+    /** project  */
+    .project-list__link{
+        @apply w-full h-full -bg--clr-Keppel/20 rounded-md overflow-hidden relative
+    }
+
+    /* project img */
+    .project-img--text{
+        @apply text-white absolute bottom-0 left-0 right-0 px-4 py-8
+    }
+    
+    .project-img--style{
+        @apply text-sm font-medium uppercase flex items-center gap-3 py-4
+    }
+    .project-img--describe{
+        @apply text-lg font-extralight
+    }
+
+    /* project link src */
+    .project-list__link-src{
+        @apply space-y-12 p-4
+    }
+    .project-list__link-style{
+        @apply space-y-4 break-all
+    }
+
+
+    .project-list__link-src__style a,
+    .project-list__link-github a{
+        /* @apply grid grid-cols-[minmax(50px,80px)_1fr] */
+        @apply underline text-blue-500
+    }
+    .project-list__link-src__style > p{
+        @apply font-medium text-lg
+    }
+
+
+
+
+    /** skill */
+    /* tile */
+    .skills-tile{
+        @apply py-8 text-xl font-medium
+    }
+    /* skill workflow */
+    .skills-workflow-checked{
+        @apply flex gap-2 items-center justify-start
+    }
+
+    /* * interests */
+    /* text event */
+    .interest-text-event{
+        @apply font-semibold
+    }
+
+    /* interest img */
+    .interest-text-image{
+        @apply py-8
+    }
+
+    .interest-text-list__items{
+        @apply flex gap-4 flex-wrap
+    }
+    .interest-text-items__img{
+        @apply md:max-w-72
+    }
+}
+
+@layer utilities{
+    .content-hidden{
+        /* visibility: hidden;
+        width: 0;
+        height: 0; */
+        /* @apply  invisible h-0 w-0 */
+        @apply hidden
+    }
+    .content-visible{
+        @apply visible h-auto w-auto
+    }
+
+    /** header menu toggle hamburger  */
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after{
+        @apply block bg-gray-300 w-full h-[2px]  mx-auto rounded-sm 
+    }
+    .hamburger::before,
+    .hamburger::after{
+        @apply w-1/2 content-[""]
+    }
+    .hamburger::before{
+        @apply -translate-y-2 absolute left-0
+    }
+    .hamburger::after{
+        @apply translate-y-2 absolute right-0
+    }
+    #header-menu-toggle:hover 
+    .hamburger{
+        @apply bg-black
+    }
+    #header-menu-toggle:hover 
+    .hamburger::after{
+        @apply bg-black
+    }
+    #header-menu-toggle:hover 
+    .hamburger::before{
+        @apply bg-black
+    }
+
+    /* projects */
+    .projects-img{
+        @apply h-[500px] bg-top bg-contain bg-no-repeat relative
+    }
+    .project-img__vimos{
+        background-image: linear-gradient(
+            60deg,
+            rgba(5, 8, 39, 0.5),
+            rgba(5, 8, 39, 0.7)
+        ),
+        url(../asset/projects/vimos.png);
+        /* width: 500px; */
+        height: 500px;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        position: relative;
+        /* @apply bg-vimos w-96 h-96 bg-cover bg-center bg-no-repeat */
+    }
+    .project-img__coffeestyle{
+        background-image: linear-gradient(
+            60deg,
+            rgba(5, 8, 39, 0.5),
+            rgba(5, 8, 39, 0.7)
+        ),
+        url(../asset/projects/coffeeStyle.png);
+        /* width: 500px; */
+        height: 500px;
+        background-position:top;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        position: relative;
+        /* @apply bg-vimos w-96 h-96 bg-cover bg-center bg-no-repeat */
+    }
+
+}
