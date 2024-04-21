@@ -60,7 +60,7 @@
 
     /** project  */
     .project-list__link{
-        @apply w-full h-screen -bg--clr-Keppel/20 rounded-md overflow-hidden relative
+        @apply w-full h-[900px] -bg--clr-Keppel/20 rounded-md overflow-hidden relative
     }
 
     /* project img */
